@@ -19,6 +19,12 @@ jobs:
           java-version: "25"
           distribution: "microsoft"
 
+      - name: Apply source update from ZIP
+        run: |
+          mkdir -p /tmp/spear-dash-update
+          unzip -q Spear-Dash-source-update.zip -d /tmp/spear-dash-update
+          cp -R /tmp/spear-dash-update/spear-dash-update/src/. src/
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
