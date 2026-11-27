@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "spear_dash_mod",
+  "version": "${version}",
+  "name": "Spear Dash Mod",
+  "description": "Client-side spear lunge dash helper and hotbar slot toggle for Minecraft 26.2.",
+  "authors": [
+    "Ayman"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ayman.speardash.SpearDashClientMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*",
+    "minecraft": "~26.2",
+    "java": ">=25"
+  }
+}
