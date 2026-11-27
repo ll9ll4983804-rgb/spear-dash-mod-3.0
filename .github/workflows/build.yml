@@ -24,3 +24,13 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build
+
+      - name: Upload mod jar
+        uses: actions/upload-artifact@v7
+        with:
+          name: Spear-Dash-Mod
+          path: |
+            build/libs/*.jar
+            !build/libs/*-sources.jar
+          if-no-files-found: error
+          retention-days: 14
