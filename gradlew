@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-GRADLE_VERSION="8.5"
+GRADLE_VERSION="8.8"
 DIST_ZIP="gradle-${GRADLE_VERSION}-bin.zip"
 URL="https://services.gradle.org/distributions/${DIST_ZIP}"
 
